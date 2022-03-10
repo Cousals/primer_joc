@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Sprite.gd" type="Script" id=2]
+[ext_resource path="res://fotogodot2.jpg" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="segonsprite" type="Sprite" parent="Sprite"]
+position = Vector2( 30, 26 )
+scale = Vector2( 0.0888889, 0.075 )
+texture = ExtResource( 3 )
