@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fotogodot2.jpg-3231db74d7b2828512077e2bb82f4c98.stex"
+path="res://.import/camp-de-futbol.jpg-a9ab0379215a538b42825c130de672e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fotogodot2.jpg"
-dest_files=[ "res://.import/fotogodot2.jpg-3231db74d7b2828512077e2bb82f4c98.stex" ]
+source_file="res://imatges/camp-de-futbol.jpg"
+dest_files=[ "res://.import/camp-de-futbol.jpg-a9ab0379215a538b42825c130de672e6.stex" ]
 
 [params]
 
