@@ -1,18 +1,24 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://escenas/Personatge2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/Terra.tscn" type="PackedScene" id=2]
+[ext_resource path="res://portal.tscn" type="PackedScene" id=3]
 
 [node name="PantallaCossos" type="Node2D"]
 
 [node name="Personatge2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 432, 143 )
+position = Vector2( 191, 149 )
 
 [node name="Terra" parent="." instance=ExtResource( 2 )]
-position = Vector2( 736, 572 )
+position = Vector2( 739, 402 )
 
 [node name="Terra2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 393, 572 )
+position = Vector2( 472, 475 )
 
 [node name="Terra3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 66, 572 )
+position = Vector2( 154, 529 )
+
+[node name="Portal" parent="." instance=ExtResource( 3 )]
+position = Vector2( 818, 37 )
+
+[connection signal="body_entered" from="Portal" to="Personatge2" method="_on_Area2D_body_entered"]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://escenas/Terra.tscn" type="PackedScene" id=1]
+[ext_resource path="res://escenas/Personatge2.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Terra" parent="." instance=ExtResource( 1 )]
+position = Vector2( 223, 506 )
+
+[node name="Terra2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 786, 381 )
+
+[node name="Terra3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 510, 444 )
+
+[node name="Personatge2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 255, 205 )
