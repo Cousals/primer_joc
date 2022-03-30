@@ -1,10 +1,10 @@
 extends KinematicBody2D
 
-var velocitat_base = 200 
+var velocitat_base = 80 
 var direccio = Vector2.DOWN
 var velocitat = Vector2.ZERO
 var gravetat = Vector2.DOWN * 980
-var velocitat_salt = - 300
+var velocitat_salt = - 250
 
 func _physics_process(delta): 
 	velocitat.x = 0 
@@ -25,7 +25,7 @@ func animation(velocitat):
 	if velocitat.x > 0 and velocitat.y > - 2:
 		$AnimatedSprite.play("corre")
 		$AnimatedSprite.flip_h = false
-	elif velocitat.x < 0 and velocitat.y < - 2:
+	elif velocitat.x < 0 and velocitat.y > - 2:
 		$AnimatedSprite.play("corre")
 		$AnimatedSprite.flip_h = true
 	
@@ -36,5 +36,6 @@ func animation(velocitat):
 		$AnimatedSprite.play("salta")
 	
 	
-func _on_Portal_body_entered(body):
-	get_tree ().change_scene("res://escena despres portal.tscn")
+func _on_kill_body_entered(body):
+	get_tree().reload_current_scene()
+	

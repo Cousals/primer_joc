@@ -1,17 +1,18 @@
 [gd_scene load_steps=2 format=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 115.5, 30 )
+extents = Vector2( 40.5, 8.5 )
 
 [node name="Terra" type="StaticBody2D"]
+position = Vector2( 22, 1 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -25.0
-margin_top = -61.0
-margin_right = 205.0
+margin_left = 193.0
+margin_top = -18.0
+margin_right = 274.0
 margin_bottom = -1.0
 color = Color( 0.0705882, 0.337255, 0.0745098, 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 90, -31 )
+position = Vector2( 233.5, -9.5 )
 shape = SubResource( 1 )
