@@ -1,12 +1,16 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://escenas/Personatge2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/Terra.tscn" type="PackedScene" id=2]
 [ext_resource path="res://portal.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Rocky Roads/lava.png" type="Texture" id=4]
+[ext_resource path="res://backround booo.png" type="Texture" id=5]
+[ext_resource path="res://escenas/bloc petit.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Rocky Roads/tileset forest petit.png" type="Texture" id=7]
+[ext_resource path="res://escenas/bloc gran.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 513.5, 21 )
+extents = Vector2( 512.5, 17 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 4 )
@@ -40,159 +44,273 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 15, 14.625 )
+
 [node name="Escena 1 Hobbit" type="Node2D"]
 
+[node name="BackroundBooo" type="Sprite" parent="."]
+position = Vector2( 510, 278 )
+scale = Vector2( 1.36698, 1.75316 )
+texture = ExtResource( 5 )
+flip_h = true
+
 [node name="Personatge2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 73, 430 )
+position = Vector2( 53, 424 )
 
-[node name="Terra" parent="." instance=ExtResource( 2 )]
-position = Vector2( 110, 491 )
+[node name="bloc mitja" parent="." instance=ExtResource( 2 )]
+position = Vector2( 549, 249 )
 
-[node name="Terra2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 215, 458 )
+[node name="bloc mitja2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 106, 483 )
 
-[node name="Terra3" parent="." instance=ExtResource( 2 )]
-position = Vector2( -145, 460 )
+[node name="bloc mitja3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -172, 471 )
 
-[node name="Terra4" parent="." instance=ExtResource( 2 )]
-position = Vector2( -31, 441 )
+[node name="bloc mitja4" parent="." instance=ExtResource( 2 )]
+position = Vector2( -38, 425 )
 
-[node name="Terra5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 320, 483 )
+[node name="bloc mitja5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 270, 450 )
 
-[node name="Terra6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 457, 447 )
+[node name="bloc mitja6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 422, 406 )
 
-[node name="Terra7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 692, 340 )
+[node name="bloc mitja7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 652, 311 )
 
-[node name="Terra8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 580, 395 )
+[node name="bloc mitja8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 560, 473 )
 
-[node name="Portal" parent="." instance=ExtResource( 3 )]
-position = Vector2( 823, 73 )
+[node name="bloc mitja9" parent="." instance=ExtResource( 2 )]
+position = Vector2( -42, 235 )
 
-[node name="kill" type="Area2D" parent="."]
+[node name="bloc mitja10" parent="." instance=ExtResource( 2 )]
+position = Vector2( -94, 174 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="kill"]
-position = Vector2( 511.5, 578 )
+[node name="lava" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lava"]
+position = Vector2( 512.5, 574 )
 shape = SubResource( 1 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="kill"]
-position = Vector2( 32, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-frame = 5
-playing = true
-
-[node name="AnimatedSprite2" type="AnimatedSprite" parent="kill"]
-position = Vector2( 96, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-frame = 5
-playing = true
-
-[node name="AnimatedSprite3" type="AnimatedSprite" parent="kill"]
-position = Vector2( 160, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-frame = 4
-playing = true
-
-[node name="AnimatedSprite4" type="AnimatedSprite" parent="kill"]
-position = Vector2( 224, 566 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="lava"]
+position = Vector2( 47, 565 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 3
 playing = true
 
-[node name="AnimatedSprite5" type="AnimatedSprite" parent="kill"]
-position = Vector2( 288, 566 )
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="lava"]
+position = Vector2( 96, 565 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 3
 playing = true
 
-[node name="AnimatedSprite6" type="AnimatedSprite" parent="kill"]
-position = Vector2( 352, 566 )
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="lava"]
+position = Vector2( 160, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 2
 playing = true
 
-[node name="AnimatedSprite7" type="AnimatedSprite" parent="kill"]
-position = Vector2( 416, 566 )
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="lava"]
+position = Vector2( 224, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 1
 playing = true
 
-[node name="AnimatedSprite8" type="AnimatedSprite" parent="kill"]
-position = Vector2( 480, 566 )
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="lava"]
+position = Vector2( 288, 564 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 8 )
+animation = "lava"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="lava"]
+position = Vector2( 352, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 playing = true
 
-[node name="AnimatedSprite9" type="AnimatedSprite" parent="kill"]
-position = Vector2( 543, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-playing = true
-
-[node name="AnimatedSprite10" type="AnimatedSprite" parent="kill"]
-position = Vector2( 607, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-playing = true
-
-[node name="AnimatedSprite11" type="AnimatedSprite" parent="kill"]
-position = Vector2( 671, 566 )
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="lava"]
+position = Vector2( 416, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 5
 playing = true
 
-[node name="AnimatedSprite12" type="AnimatedSprite" parent="kill"]
-position = Vector2( 735, 566 )
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="lava"]
+position = Vector2( 480, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 4
 playing = true
 
-[node name="AnimatedSprite13" type="AnimatedSprite" parent="kill"]
-position = Vector2( 799, 566 )
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="lava"]
+position = Vector2( 543, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 4
 playing = true
 
-[node name="AnimatedSprite14" type="AnimatedSprite" parent="kill"]
-position = Vector2( 862, 566 )
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="lava"]
+position = Vector2( 607, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 4
 playing = true
 
-[node name="AnimatedSprite15" type="AnimatedSprite" parent="kill"]
-position = Vector2( 926, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-frame = 4
-playing = true
-
-[node name="AnimatedSprite16" type="AnimatedSprite" parent="kill"]
-position = Vector2( 989, 566 )
+[node name="AnimatedSprite11" type="AnimatedSprite" parent="lava"]
+position = Vector2( 671, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 3
 playing = true
 
-[node name="AnimatedSprite17" type="AnimatedSprite" parent="kill"]
-position = Vector2( 992, 566 )
+[node name="AnimatedSprite12" type="AnimatedSprite" parent="lava"]
+position = Vector2( 735, 564 )
+scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 2
 playing = true
 
-[connection signal="body_entered" from="Portal" to="Personatge2" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="kill" to="Personatge2" method="_on_kill_body_entered"]
+[node name="AnimatedSprite13" type="AnimatedSprite" parent="lava"]
+position = Vector2( 799, 564 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 8 )
+animation = "lava"
+frame = 2
+playing = true
+
+[node name="AnimatedSprite14" type="AnimatedSprite" parent="lava"]
+position = Vector2( 854, 564 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 8 )
+animation = "lava"
+frame = 2
+playing = true
+
+[node name="AnimatedSprite15" type="AnimatedSprite" parent="lava"]
+position = Vector2( 926, 564 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 8 )
+animation = "lava"
+frame = 2
+playing = true
+
+[node name="AnimatedSprite16" type="AnimatedSprite" parent="lava"]
+position = Vector2( 989, 566 )
+frames = SubResource( 8 )
+animation = "lava"
+frame = 1
+playing = true
+
+[node name="AnimatedSprite17" type="AnimatedSprite" parent="lava"]
+position = Vector2( 976, 564 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 8 )
+animation = "lava"
+playing = true
+
+[node name="bloc gran" parent="." instance=ExtResource( 8 )]
+
+[node name="bloc petit" parent="." instance=ExtResource( 6 )]
+
+[node name="bloc petit2" type="StaticBody2D" parent="."]
+position = Vector2( 625, 136 )
+
+[node name="Sprite" type="Sprite" parent="bloc petit2"]
+position = Vector2( 337, 259 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc petit2"]
+show_behind_parent = true
+position = Vector2( 310, 258 )
+shape = SubResource( 11 )
+
+[node name="bloc petit3" type="StaticBody2D" parent="."]
+position = Vector2( 625, 136 )
+
+[node name="Sprite" type="Sprite" parent="bloc petit3"]
+position = Vector2( 385, 218 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc petit3"]
+show_behind_parent = true
+position = Vector2( 357, 213 )
+shape = SubResource( 11 )
+
+[node name="bloc petit4" type="StaticBody2D" parent="."]
+position = Vector2( 625, 130 )
+
+[node name="Sprite" type="Sprite" parent="bloc petit4"]
+position = Vector2( 87, 68 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc petit4"]
+show_behind_parent = true
+position = Vector2( 60, 67 )
+shape = SubResource( 11 )
+
+[node name="bloc petit5" type="StaticBody2D" parent="."]
+position = Vector2( 556, 105 )
+
+[node name="Sprite" type="Sprite" parent="bloc petit5"]
+position = Vector2( 87, 57 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc petit5"]
+show_behind_parent = true
+position = Vector2( 60, 52.75 )
+shape = SubResource( 11 )
+
+[node name="bloc petit6" type="StaticBody2D" parent="."]
+position = Vector2( 555, 117 )
+
+[node name="Sprite" type="Sprite" parent="bloc petit6"]
+position = Vector2( -248, 154 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc petit6"]
+show_behind_parent = true
+position = Vector2( -274, 151 )
+shape = SubResource( 11 )
+
+[node name="bloc petit7" type="StaticBody2D" parent="."]
+position = Vector2( 313, -48 )
+
+[node name="Sprite" type="Sprite" parent="bloc petit7"]
+position = Vector2( -244, 184 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bloc petit7"]
+show_behind_parent = true
+position = Vector2( -272, 181.625 )
+shape = SubResource( 11 )
+
+[node name="Portal" parent="." instance=ExtResource( 3 )]
+position = Vector2( -92, -202 )
+
+[connection signal="body_entered" from="lava" to="Personatge2" method="_on_kill_body_entered"]
+[connection signal="body_entered" from="Portal" to="Personatge2" method="_on_Portal_body_entered"]
