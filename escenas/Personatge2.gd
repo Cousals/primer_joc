@@ -39,3 +39,11 @@ func animation(velocitat):
 func _on_kill_body_entered(body):
 	get_tree().reload_current_scene()
 	
+func _on_VisibilityNotifier2D_screen_exited():
+	get_tree().reload_current_scene()
+
+
+func _on_Portal_body_entered(body):
+	if body.name == "Personatge2":
+		get_tree().change_scene("escena final")
+		
