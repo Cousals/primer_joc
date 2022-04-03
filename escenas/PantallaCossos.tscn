@@ -105,7 +105,7 @@ position = Vector2( 46, 562 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 3
+frame = 2
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="lava"]
@@ -113,7 +113,7 @@ position = Vector2( 95, 562 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 3
+frame = 2
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="lava"]
@@ -121,7 +121,7 @@ position = Vector2( 159, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="lava"]
@@ -129,7 +129,6 @@ position = Vector2( 223, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="lava"]
@@ -137,7 +136,6 @@ position = Vector2( 287, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="lava"]
@@ -145,6 +143,7 @@ position = Vector2( 351, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
+frame = 5
 playing = true
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="lava"]
@@ -152,7 +151,7 @@ position = Vector2( 415, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 5
+frame = 4
 playing = true
 
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="lava"]
@@ -160,7 +159,7 @@ position = Vector2( 479, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 4
+frame = 3
 playing = true
 
 [node name="AnimatedSprite9" type="AnimatedSprite" parent="lava"]
@@ -168,7 +167,7 @@ position = Vector2( 542, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 4
+frame = 3
 playing = true
 
 [node name="AnimatedSprite10" type="AnimatedSprite" parent="lava"]
@@ -176,7 +175,7 @@ position = Vector2( 606, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 4
+frame = 3
 playing = true
 
 [node name="AnimatedSprite11" type="AnimatedSprite" parent="lava"]
@@ -184,7 +183,7 @@ position = Vector2( 670, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 3
+frame = 2
 playing = true
 
 [node name="AnimatedSprite12" type="AnimatedSprite" parent="lava"]
@@ -192,7 +191,7 @@ position = Vector2( 734, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite13" type="AnimatedSprite" parent="lava"]
@@ -200,7 +199,7 @@ position = Vector2( 798, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite14" type="AnimatedSprite" parent="lava"]
@@ -208,7 +207,7 @@ position = Vector2( 853, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite15" type="AnimatedSprite" parent="lava"]
@@ -216,7 +215,7 @@ position = Vector2( 925, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
-frame = 2
+frame = 1
 playing = true
 
 [node name="AnimatedSprite17" type="AnimatedSprite" parent="lava"]
@@ -224,6 +223,7 @@ position = Vector2( 975, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
+frame = 5
 playing = true
 
 [node name="borde dreta" type="Area2D" parent="."]
