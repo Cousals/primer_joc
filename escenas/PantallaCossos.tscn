@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://escenas/Personatge2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://escenas/Terra.tscn" type="PackedScene" id=2]
@@ -10,7 +10,7 @@
 [ext_resource path="res://escenas/bloc gran.tscn" type="PackedScene" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 512.5, 17 )
+extents = Vector2( 512.5, 26 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 4 )
@@ -44,19 +44,25 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 44.125, 301 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 13.75, 47 )
+
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 15, 14.625 )
 
 [node name="Escena 1 Hobbit" type="Node2D"]
 
 [node name="BackroundBooo" type="Sprite" parent="."]
-position = Vector2( 510, 278 )
-scale = Vector2( 1.36698, 1.75316 )
+position = Vector2( 509, 300.5 )
+scale = Vector2( 1.36698, 1.88924 )
 texture = ExtResource( 5 )
 flip_h = true
 
 [node name="Personatge2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 53, 424 )
+position = Vector2( 51, 425 )
 
 [node name="bloc mitja" parent="." instance=ExtResource( 2 )]
 position = Vector2( 549, 249 )
@@ -91,11 +97,11 @@ position = Vector2( -94, 174 )
 [node name="lava" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lava"]
-position = Vector2( 512.5, 574 )
+position = Vector2( 512.5, 572 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="lava"]
-position = Vector2( 47, 565 )
+position = Vector2( 46, 562 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -103,7 +109,7 @@ frame = 3
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="lava"]
-position = Vector2( 96, 565 )
+position = Vector2( 95, 562 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -111,7 +117,7 @@ frame = 3
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="lava"]
-position = Vector2( 160, 564 )
+position = Vector2( 159, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -119,7 +125,7 @@ frame = 2
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="lava"]
-position = Vector2( 224, 564 )
+position = Vector2( 223, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -127,7 +133,7 @@ frame = 1
 playing = true
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="lava"]
-position = Vector2( 288, 564 )
+position = Vector2( 287, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -135,14 +141,14 @@ frame = 1
 playing = true
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="lava"]
-position = Vector2( 352, 564 )
+position = Vector2( 351, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 playing = true
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="lava"]
-position = Vector2( 416, 564 )
+position = Vector2( 415, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -150,7 +156,7 @@ frame = 5
 playing = true
 
 [node name="AnimatedSprite8" type="AnimatedSprite" parent="lava"]
-position = Vector2( 480, 564 )
+position = Vector2( 479, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -158,7 +164,7 @@ frame = 4
 playing = true
 
 [node name="AnimatedSprite9" type="AnimatedSprite" parent="lava"]
-position = Vector2( 543, 564 )
+position = Vector2( 542, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -166,7 +172,7 @@ frame = 4
 playing = true
 
 [node name="AnimatedSprite10" type="AnimatedSprite" parent="lava"]
-position = Vector2( 607, 564 )
+position = Vector2( 606, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -174,7 +180,7 @@ frame = 4
 playing = true
 
 [node name="AnimatedSprite11" type="AnimatedSprite" parent="lava"]
-position = Vector2( 671, 564 )
+position = Vector2( 670, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -182,7 +188,7 @@ frame = 3
 playing = true
 
 [node name="AnimatedSprite12" type="AnimatedSprite" parent="lava"]
-position = Vector2( 735, 564 )
+position = Vector2( 734, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -190,7 +196,7 @@ frame = 2
 playing = true
 
 [node name="AnimatedSprite13" type="AnimatedSprite" parent="lava"]
-position = Vector2( 799, 564 )
+position = Vector2( 798, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -198,7 +204,7 @@ frame = 2
 playing = true
 
 [node name="AnimatedSprite14" type="AnimatedSprite" parent="lava"]
-position = Vector2( 854, 564 )
+position = Vector2( 853, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
@@ -206,26 +212,40 @@ frame = 2
 playing = true
 
 [node name="AnimatedSprite15" type="AnimatedSprite" parent="lava"]
-position = Vector2( 926, 564 )
+position = Vector2( 925, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 frame = 2
 playing = true
 
-[node name="AnimatedSprite16" type="AnimatedSprite" parent="lava"]
-position = Vector2( 989, 566 )
-frames = SubResource( 8 )
-animation = "lava"
-frame = 1
-playing = true
-
 [node name="AnimatedSprite17" type="AnimatedSprite" parent="lava"]
-position = Vector2( 976, 564 )
+position = Vector2( 975, 561 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 8 )
 animation = "lava"
 playing = true
+
+[node name="borde dreta" type="Area2D" parent="."]
+position = Vector2( 1033, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="borde dreta"]
+visible = false
+position = Vector2( 39.5, 300 )
+shape = SubResource( 12 )
+
+[node name="borde esquerra" type="Area2D" parent="."]
+position = Vector2( 1033, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="borde esquerra"]
+visible = false
+position = Vector2( -1110.13, 297 )
+shape = SubResource( 12 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="borde esquerra"]
+visible = false
+position = Vector2( -1049.25, 551 )
+shape = SubResource( 13 )
 
 [node name="bloc gran" parent="." instance=ExtResource( 8 )]
 
@@ -313,4 +333,6 @@ shape = SubResource( 11 )
 position = Vector2( -92, -202 )
 
 [connection signal="body_entered" from="lava" to="Personatge2" method="_on_kill_body_entered"]
+[connection signal="body_entered" from="borde dreta" to="Personatge2" method="_on_kill_body_entered"]
+[connection signal="body_entered" from="borde esquerra" to="Personatge2" method="_on_kill_body_entered"]
 [connection signal="body_entered" from="Portal" to="Personatge2" method="_on_Portal_body_entered"]

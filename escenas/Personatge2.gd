@@ -42,4 +42,7 @@ func _on_kill_body_entered(body):
 	get_tree().reload_current_scene()
 
 func _on_Portal_body_entered(body):
-	get_tree().change_scene("res://escenas/escena final.tscn")
+	get_tree().change_scene("res://escenas/Escena final1.tscn")
+
+func _on_Portal_tornada_body_entered(body):
+	get_tree().change_scene("res://escenas/PantallaCossos.tscn")
